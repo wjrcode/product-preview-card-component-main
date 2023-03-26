@@ -1,0 +1,79 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.product {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 30rem;
+    background-color: white;
+}
+
+.product__image{
+    width: 50%;
+}
+
+.product__image img{
+    width: 100%;
+}
+
+.product__info{
+    width: 50%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.product__name{
+    font-family: 'Fraunces';
+    font-weight: 700;
+}
+
+.product__prices{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.product__promotional-price{
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 28px;
+    color: hsl(158, 36%, 37%);
+}
+
+.product__button{
+    outline: none;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 5px;
+    font-weight: 700;
+}
