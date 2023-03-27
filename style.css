@@ -13,6 +13,7 @@ html{
 
 body {
     height: 100%;
+    margin: 0;
     font-family: 'Montserrat';
     font-size: 14px;
     background-color: hsl(30, 38%, 92%);
@@ -31,27 +32,36 @@ main {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    max-width: 30rem;
+    max-width: 35rem;
     background-color: white;
+    border-radius: 0.5rem;
 }
+
 
 .product__image{
     width: 50%;
-}
-
-.product__image img{
-    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
 }
 
 .product__info{
     width: 50%;
-    padding: 1rem;
+    padding: 2rem;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product__type{
+    letter-spacing: 0.5rem;
 }
 
 .product__name{
     font-family: 'Fraunces';
     font-weight: 700;
+    margin: 0;
 }
 
 .product__prices{
@@ -76,4 +86,9 @@ main {
     padding: 0.7rem;
     border-radius: 5px;
     font-weight: 700;
+}
+
+.product__button:hover{
+    background-color: hsl(158, 36%, 20%);
+    cursor: pointer;
 }
